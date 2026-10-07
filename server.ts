@@ -457,24 +457,36 @@ Assemble the optimal examination paper matching ${totalMarks} marks using only e
 });
 
 // Mount Vite middleware / static files based on active execution mode
-async function start() {
+async function setupApp() {
   if (process.env.NODE_ENV !== "production") {
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: "spa",
     });
+
     app.use(vite.middlewares);
   } else {
     const distPath = path.join(process.cwd(), "dist");
+
     app.use(express.static(distPath));
+
     app.get("*", (req, res) => {
       res.sendFile(path.join(distPath, "index.html"));
     });
   }
+}
+
+// Initialize the app
+await setupApp();
+
+// Export Express app for Vercel
+export default app;
+
+// Local development only
+if (process.env.NODE_ENV !== "production") {
+  const PORT = Number(process.env.PORT) || 3000;
 
   app.listen(PORT, "0.0.0.0", () => {
     console.log(`Server running on http://localhost:${PORT}`);
   });
 }
-
-start();
