@@ -1,0 +1,6 @@
+{
+  "name": "IIS Study Hub",
+  "description": "A personalized Class 10 CBSE study revision portal with timed past year problems, diagnostic dashboards, and a custom AI Tutor tailored for The Indian International School.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

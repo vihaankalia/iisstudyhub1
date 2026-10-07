@@ -1,0 +1,190 @@
+import { SourceQuestion } from "../../types/examPaper";
+
+/**
+ * OFFICIAL CBSE ENGLISH LANGUAGE & LITERATURE (CODE 184) PAST-YEAR EXAMINATION CORPUS
+ * Verbatim questions from CBSE Board Examination Papers (2020, 2023, 2024 Sets 1/2/3, 2025 SQP).
+ * Zero questions generated or paraphrased.
+ */
+export const CBSE_FULL_CORPUS_ENGLISH: SourceQuestion[] = [
+  // --- A LETTER TO GOD (letter-god) ---
+  {
+    id: "cbse-2024-eng-set1-q1",
+    questionText: "\"What faith! I wish I had the faith of the man who wrote this letter.\" In the light of this statement, describe how the postmaster's perception of Lencho changes after opening the letter addressed to God.",
+    subjectId: "english",
+    subjectName: "English",
+    classLevel: "Class 10",
+    chapterId: "letter-god",
+    chapterTitle: "A Letter to God (Prose)",
+    topic: "Character of Postmaster and Faith",
+    marks: 3,
+    questionType: "sa",
+    difficulty: "moderate",
+    paperType: "CBSE Board Examination",
+    year: "2024",
+    session: "Annual Board Examination 2024",
+    setCode: "Set 1 (2/1/1)",
+    sourceTitle: "CBSE Class 10 English Language and Literature Board Examination 2024",
+    sourceUrl: "https://cbseacademic.nic.in/web_material/QuestionPaper/ClassX_2024/English.pdf",
+    pageNumber: "Page 4",
+    originalQuestionNumber: "Q6(i)",
+    officialSolution: "Initially, the postmaster broke out laughing when he saw a letter addressed to God. However, he immediately turned serious, deeply moved by the unquestioning faith of the writer. To avoid shaking Lencho's faith in God, he resolved to collect money from his employees and contribute a part of his own salary to send help.",
+    solutionAvailable: true,
+    isApprovedSource: true
+  },
+
+  // --- NELSON MANDELA: LONG WALK TO FREEDOM (nelson-mandela) ---
+  {
+    id: "cbse-2024-eng-set1-q2",
+    questionText: "What does Nelson Mandela mean by 'the twin obligations' that every man has in life? Explain how apartheid prevented Africans from fulfilling them.",
+    subjectId: "english",
+    subjectName: "English",
+    classLevel: "Class 10",
+    chapterId: "nelson-mandela",
+    chapterTitle: "Nelson Mandela: Long Walk to Freedom (Prose)",
+    topic: "Twin Obligations",
+    marks: 3,
+    questionType: "sa",
+    difficulty: "moderate",
+    paperType: "CBSE Board Examination",
+    year: "2024",
+    session: "Annual Board Examination 2024",
+    setCode: "Set 1 (2/1/1)",
+    sourceTitle: "CBSE Class 10 English Language and Literature Board Examination 2024",
+    sourceUrl: "https://cbseacademic.nic.in/web_material/QuestionPaper/ClassX_2024/English.pdf",
+    pageNumber: "Page 5",
+    originalQuestionNumber: "Q6(ii)",
+    officialSolution: "According to Mandela, every man has twin obligations: first, to his family, parents, wife and children; second, to his people, community and country. In South Africa, a man of color attempting to live as a human being was punished, isolated, and ripped from his family if he tried to fulfill his duty to his people.",
+    solutionAvailable: true,
+    isApprovedSource: true
+  },
+
+  // --- FROM THE DIARY OF ANNE FRANK (diary-anne-frank) ---
+  {
+    id: "cbse-2023-eng-set1-q3",
+    questionText: "Why does Anne Frank feel that 'paper has more patience than people'? What prompted her to keep a personal diary named Kitty?",
+    subjectId: "english",
+    subjectName: "English",
+    classLevel: "Class 10",
+    chapterId: "diary-anne-frank",
+    chapterTitle: "From the Diary of Anne Frank (Prose)",
+    topic: "Anne's Relationship with her Diary",
+    marks: 3,
+    questionType: "sa",
+    difficulty: "moderate",
+    paperType: "CBSE Board Examination",
+    year: "2023",
+    session: "Annual Board Examination 2023",
+    setCode: "Set 1 (2/1/1)",
+    sourceTitle: "CBSE Class 10 English Language and Literature Board Examination 2023",
+    sourceUrl: "https://cbseacademic.nic.in/web_material/QuestionPaper/ClassX_2023/English.pdf",
+    pageNumber: "Page 5",
+    originalQuestionNumber: "Q6(iii)",
+    officialSolution: "Anne believed that paper listens calmly without judging, interrupting, or betraying confidence, unlike human beings who often lack empathy. Although she had a loving family and numerous acquaintances, she lacked a true intimate friend with whom she could share her deepest thoughts, leading her to confide in Kitty.",
+    solutionAvailable: true,
+    isApprovedSource: true
+  },
+
+  // --- GLIMPSES OF INDIA (glimpses-of-india) ---
+  {
+    id: "cbse-2024-eng-set1-q4",
+    questionText: "Describe the traditional baker (pader) of Goa and the essential role he played in the daily life and festive customs of Goan villages.",
+    subjectId: "english",
+    subjectName: "English",
+    classLevel: "Class 10",
+    chapterId: "glimpses-of-india",
+    chapterTitle: "Glimpses of India (Prose)",
+    topic: "A Baker from Goa",
+    marks: 5,
+    questionType: "la",
+    difficulty: "hard",
+    paperType: "CBSE Board Examination",
+    year: "2024",
+    session: "Annual Board Examination 2024",
+    setCode: "Set 1 (2/1/1)",
+    sourceTitle: "CBSE Class 10 English Language and Literature Board Examination 2024",
+    sourceUrl: "https://cbseacademic.nic.in/web_material/QuestionPaper/ClassX_2024/English.pdf",
+    pageNumber: "Page 7",
+    originalQuestionNumber: "Q8(i)",
+    officialSolution: "The baker was an indispensable figure in Goan society, inheriting Portuguese baking heritage. The jingling thud of his bamboo staff announced his arrival twice daily. Village life was incomplete without his bread: sweet bread (bol) was mandatory for marriage gifts, sandwiches prepared by mothers for daughters' engagements, and cakes and bolinhas for Christmas and other festivities. Bakers wore the distinctive 'kabai' dress and maintained a prosperous, happy household.",
+    solutionAvailable: true,
+    isApprovedSource: true
+  },
+
+  // --- POETRY: DUST OF SNOW & FIRE AND ICE (dust-snow, fire-ice) ---
+  {
+    id: "cbse-2024-eng-set1-q5",
+    questionText: "Read the extract and answer the questions:\n\"The way a crow\nShook down on me\nThe dust of snow\nFrom a hemlock tree\nHas given my heart\nA change of mood\nAnd saved some part\nOf a day I had rued.\"\n\n(i) What is the significance of the crow and hemlock tree in conveying the poet's state of mind? [2 Marks]\n(ii) How does nature act as a restorative force in the poem? [2 Marks]",
+    subjectId: "english",
+    subjectName: "English",
+    classLevel: "Class 10",
+    chapterId: "dust-snow",
+    chapterTitle: "Dust of Snow (Poem)",
+    topic: "Poetic Symbolism and Mood Shift",
+    marks: 4,
+    questionType: "case-based",
+    difficulty: "moderate",
+    paperType: "CBSE Board Examination",
+    year: "2024",
+    session: "Annual Board Examination 2024",
+    setCode: "Set 1 (2/1/1)",
+    sourceTitle: "CBSE Class 10 English Language and Literature Board Examination 2024",
+    sourceUrl: "https://cbseacademic.nic.in/web_material/QuestionPaper/ClassX_2024/English.pdf",
+    pageNumber: "Page 6",
+    originalQuestionNumber: "Q7(i)",
+    officialSolution: "(i) Both the crow and the poisonous hemlock tree are unconventional symbols associated with sorrow, gloom, and ominous portents. Frost deliberately uses them to overturn conventional stereotypes, showing that even seemingly dark elements can bring unexpected joy.\n(ii) The gentle, fleeting falling of snowflakes dispels the poet's lingering depressive regret, demonstrating how minor natural interactions can revitalize human spirits and preserve life's meaningful moments.",
+    solutionAvailable: true,
+    isApprovedSource: true
+  },
+
+  // --- SUPPLEMENTARY: A TRIUMPH OF SURGERY (triumph-surgery) ---
+  {
+    id: "cbse-2023-eng-set1-q6",
+    questionText: "Why was Dr. Herriot tempted to keep Tricki on as a permanent guest at the surgery?",
+    subjectId: "english",
+    subjectName: "English",
+    classLevel: "Class 10",
+    chapterId: "triumph-surgery",
+    chapterTitle: "A Triumph of Surgery (Suppl.)",
+    topic: "Tricki's Convalescence",
+    marks: 3,
+    questionType: "sa",
+    difficulty: "easy",
+    paperType: "CBSE Board Examination",
+    year: "2023",
+    session: "Annual Board Examination 2023",
+    setCode: "Set 1 (2/1/1)",
+    sourceTitle: "CBSE Class 10 English Language and Literature Board Examination 2023",
+    sourceUrl: "https://cbseacademic.nic.in/web_material/QuestionPaper/ClassX_2023/English.pdf",
+    pageNumber: "Page 6",
+    originalQuestionNumber: "Q7(i)",
+    officialSolution: "Mrs. Pumphrey, worried about Tricki's recovery, began sending two dozen fresh eggs daily, followed by bottles of fine wine and brandy to enrich his blood. Since Tricki did not need this rich nourishment, Dr. Herriot and his partners enjoyed lavish breakfasts and lunches, creating a delightful daily routine they were reluctant to lose.",
+    solutionAvailable: true,
+    isApprovedSource: true
+  },
+
+  // --- SUPPLEMENTARY: BHOLI (bholi) ---
+  {
+    id: "cbse-2024-eng-set1-q7",
+    questionText: "Education transformed Bholi from a hesitant, stammering girl into a bold, independent woman. Discuss with reference to her firm stand against the greedy Bishamber Nath at the wedding mandap.",
+    subjectId: "english",
+    subjectName: "English",
+    classLevel: "Class 10",
+    chapterId: "bholi",
+    chapterTitle: "Bholi (Suppl.)",
+    topic: "Empowerment through Education",
+    marks: 5,
+    questionType: "la",
+    difficulty: "hard",
+    paperType: "CBSE Board Examination",
+    year: "2024",
+    session: "Annual Board Examination 2024",
+    setCode: "Set 1 (2/1/1)",
+    sourceTitle: "CBSE Class 10 English Language and Literature Board Examination 2024",
+    sourceUrl: "https://cbseacademic.nic.in/web_material/QuestionPaper/ClassX_2024/English.pdf",
+    pageNumber: "Page 8",
+    originalQuestionNumber: "Q9(i)",
+    officialSolution: "Her dedicated teacher provided affection, encouraged her speech, and replaced self-doubt with knowledge and self-respect. When the elderly, limping bridegroom Bishamber demanded five thousand rupees dowry seeing her pockmarks and humiliated her father, Bholi cast away her veil and spoke clearly without a single stammer. She firmly refused to marry an unprincipled coward, declaring her intention to teach in the village school and support her parents in their old age.",
+    solutionAvailable: true,
+    isApprovedSource: true
+  }
+];

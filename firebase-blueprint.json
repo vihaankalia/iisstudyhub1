@@ -1,0 +1,148 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "The profile and preferences of a CBSE Class 10 student",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "description": "Unique user credentials identifier"
+        },
+        "name": {
+          "type": "string",
+          "description": "Student's display name"
+        },
+        "email": {
+          "type": "string",
+          "description": "Student's secondary login key email"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Creation timestamp in ISO format"
+        },
+        "learningPace": {
+          "type": "string",
+          "enum": ["slow", "medium", "fast"],
+          "description": "Tailored learning pace calculated by AI or self-selected"
+        },
+        "weakAreas": {
+          "type": "array",
+          "description": "Topics or chapters where the student scored low"
+        },
+        "strengthAreas": {
+          "type": "array",
+          "description": "Topics or chapters where the student scored high"
+        },
+        "dailyStreak": {
+          "type": "integer",
+          "description": "Number of consecutive days student has engaged with the app"
+        },
+        "lastQuizDate": {
+          "type": "string",
+          "description": "ISO date of when the student took their last quiz"
+        },
+        "selectedSubjects": {
+          "type": "array",
+          "description": "List of subjects targeted by the student"
+        }
+      },
+      "required": ["uid", "name", "email", "createdAt"]
+    },
+    "Progress": {
+      "title": "Progress",
+      "description": "Continuous progress tracking of a student per subject/chapter level",
+      "type": "object",
+      "properties": {
+        "subjectId": {
+          "type": "string",
+          "description": "Id of the subject (e.g. science, mathematics)"
+        },
+        "chapterId": {
+          "type": "string",
+          "description": "Id of the chapter"
+        },
+        "completed": {
+          "type": "boolean",
+          "description": "Whether the student has completed reading or studying this chapter"
+        },
+        "quizAttempts": {
+          "type": "integer",
+          "description": "Total number of quiz attempts on this chapter"
+        },
+        "highScore": {
+          "type": "integer",
+          "description": "High score out of 100 on quizzes in this chapter"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Timestamp of the last completion or progress update"
+        }
+      },
+      "required": ["subjectId", "chapterId", "completed"]
+    },
+    "QuizResult": {
+      "title": "QuizResult",
+      "description": "Detailed log of practice quizzes and timed PYQs (Past Year Questions)",
+      "type": "object",
+      "properties": {
+        "quizId": {
+          "type": "string",
+          "description": "Unique quiz database reference"
+        },
+        "subjectId": {
+          "type": "string",
+          "description": "Subject reference"
+        },
+        "chapterId": {
+          "type": "string",
+          "description": "Chapter reference if chapter-specific, or 'all'"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["daily_quiz", "timed_pyq"],
+          "description": "Type of the test taken"
+        },
+        "score": {
+          "type": "integer",
+          "description": "Score achieved (percentage out of 100)"
+        },
+        "correctCount": {
+          "type": "integer",
+          "description": "Count of correct questions"
+        },
+        "totalCount": {
+          "type": "integer",
+          "description": "Total quiz questions count"
+        },
+        "timeTaken": {
+          "type": "integer",
+          "description": "Time taken in seconds to complete the timed test"
+        },
+        "date": {
+          "type": "string",
+          "description": "ISO timestamp indicating when the test was completed"
+        },
+        "weakTopicsIdentified": {
+          "type": "array",
+          "description": "Specific topics within the test where user answered incorrectly"
+        }
+      },
+      "required": ["quizId", "subjectId", "type", "score", "date"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Class 10 Student Profile details"
+    },
+    "/users/{userId}/progress/{progressId}": {
+      "schema": "Progress",
+      "description": "Continuous topic/chapter progress records"
+    },
+    "/users/{userId}/quizzes/{quizId}": {
+      "schema": "QuizResult",
+      "description": "Completed quiz or timed past year question results"
+    }
+  }
+}
